@@ -1,0 +1,32 @@
+package labTwo;
+
+
+public class Pharmacy extends InvOrg {
+	protected String desc;
+
+	public Pharmacy(String InvName, double InvPrice, int InvID, String InvPharm) {
+		super(InvName, InvPrice, InvID);
+		desc = InvPharm;
+	}
+	
+	// Set description
+	public void setDesc (String InvPharm) {
+		desc = InvPharm;
+	}
+	
+	// Get description
+	public String getDesc() {
+		return desc;
+	}
+	
+	// toString
+	public String toString() {
+		return super.toString() + " is a " + desc + " product";
+	}
+	
+	public void bigPharma() {
+		System.out.print(name + " costs " + price + " and is a " + desc + " product");
+	}
+	
+	
+}
